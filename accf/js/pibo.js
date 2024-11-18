@@ -133,6 +133,7 @@ function loadScript(url, callback) {
       'extend',
       'simulator',
       'speak',
+      'tell',
       'play',
       'action',
       'speak',
