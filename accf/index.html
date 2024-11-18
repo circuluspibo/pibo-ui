@@ -175,7 +175,9 @@
 
   <!-- 왼쪽 메뉴 -->
   <div class="menu">
+    <!--
     <h2>질문 목록</h2>
+    -->
     <button onclick="showQA(0)"><i class="fas fa-question-circle"></i> 여기에서 무엇을 할 수 있나요?</button>
     <button onclick="showQA(1)"><i class="far fa-clock"></i> 운영 시간은 어떻게 되나요?</button>
     <button onclick="showQA(2)"><i class="fas fa-ticket-alt"></i> 입장료가 얼마인가요?</button>
@@ -185,6 +187,7 @@
 
   <!-- 오른쪽 콘텐츠 -->
   <div class="content">
+    <!---->
     <h1>어린이문화원 안내</h1>
     <div class="chat-container" id="chat">
       <!-- 대화 내용이 여기에 표시됩니다 -->
@@ -234,6 +237,33 @@
       botBubble.className = "chat-bubble bot";
       botBubble.innerHTML = `<p>${selectedQA.answer}</p>`;
       chat.appendChild(botBubble);
+      pibo.tell(selectedQA.answer)
+    }
+
+
+    const ids= "10000000aec32b8a"
+
+    pibo.ready = ()=>{
+
+
+        pibo.init(ids,'ops') //pibo.init(robotId,'stg')
+
+
+
+        pibo.receive('pibo',(data)=>{
+            console.log('live',data)
+        }) 
+
+        pibo.receive('botcard',(data)=>{
+    
+        })  
+
+        
+
+        pibo.receive('talk',(data)=>{
+            console.log('talk',data)
+        })    
+
     }
   </script>
 
