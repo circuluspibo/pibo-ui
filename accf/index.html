@@ -175,6 +175,11 @@
 
   <!-- 왼쪽 메뉴 -->
   <div class="menu">
+    <button onclick="setLang('ko')">한국어</button>
+    <button onclick="setLang('ko')">english</button>
+    <button onclick="setLang('ru')">русский</button>
+    <button onclick="setLang('vi')">Tiếng Việt</button>
+    <button onclick="setLang('th')">แบบไทย</button>
     <!--
     <h2>질문 목록</h2>
     -->
@@ -607,9 +612,15 @@
         ]
     }
 
+    let lang = 'ko'
+
+    function setLang(lng){
+        lang = lng
+    }
+
     function showQA(index) {
       const chat = document.getElementById("chat");
-      const selectedQA = QAs['en'][index];
+      const selectedQA = QAs[lang][index];
 
       // 기존 내용 지우기
       chat.innerHTML = "";
@@ -625,7 +636,7 @@
       botBubble.className = "chat-bubble bot";
       botBubble.innerHTML = `<p>${selectedQA.answer}</p>`;
       chat.appendChild(botBubble);
-      pibo.tell(selectedQA.answer)
+      pibo.tell(selectedQA.answer, { lang })
     }
 
 
