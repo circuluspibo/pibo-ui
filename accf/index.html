@@ -173,7 +173,7 @@
 
     .flag {
       float : left;
-      width : 18% !important;
+      width : 20% !important;
     }
   </style>
 </head>
@@ -181,11 +181,16 @@
 
   <!-- 왼쪽 메뉴 -->
   <div class="menu">
-    <button class="flag" onclick="setLang('ko')">한국어</button>
-    <button class="flag" onclick="setLang('ko')">english</button>
-    <button class="flag" onclick="setLang('ru')">русский</button>
-    <button class="flag" onclick="setLang('vi')">Tiếng Việt</button>
-    <button class="flag" onclick="setLang('th')">แบบไทย</button>
+    <button class="flag" onclick="setLang('ko')"><img src="img/south-korea.png"/></button>
+    <button class="flag" onclick="setLang('en')"><img src="img/united-kingdom.png"/></button>
+    <button class="flag" onclick="setLang('ru')"><img src="img/russia.png"/></button>
+    <button class="flag" onclick="setLang('vi')"><img src="img/vietnam.png"/></button>
+    <button class="flag" onclick="setLang('th')"><img src="img/thailand.png"/></button>
+    <button class="flag" onclick="setLang('cn')"><img src="img/china.png"/></button>
+    <button class="flag" onclick="setLang('ja')"><img src="img/japan.png"/></button>
+    <button class="flag" onclick="setLang('ar')"><img src="img/russia.png"/></button>
+    <button class="flag" onclick="setLang('fa')"><img src="img/iran.png"/></button>
+    <button class="flag" onclick="setLang('tr')"><img src="img/turkey.png"/></button>
     <!--
     <h2>질문 목록</h2>
     -->
@@ -195,8 +200,8 @@
     <button onclick="showQA(3)"><i class="fas fa-robot"></i> 체험 프로그램은 무엇이 있나요?</button>
     <button onclick="showQA(4)"><i class="fas fa-restroom"></i> 화장실은 어디에 있나요?</button>
     <button onclick="showQA(5)"><i class="fas fa-utensils"></i> 식당은 어디에 있나요?</button>
-    <button onclick="showQA(6)"><i class="fas fa-calendar-star"></i> 오늘 특별 프로그램이 있나요?</button>
-    <button onclick="showQA(8)"><i class="fas fa-calendar-check"></i> 예약이 필요한가요?</button>
+    <button onclick="showQA(6)"><i class="fas fa-calendar-check"></i> 오늘 특별 프로그램이 있나요?</button>
+    <button onclick="showQA(8)"><i class="fas fa-calendar-plus"></i> 예약이 필요한가요?</button>
     <button onclick="showQA(9)"><i class="fas fa-parking"></i> 주차장은 어디에 있나요?</button>
     <button onclick="showQA(10)"><i class="fas fa-child"></i> 아이들만 들어갈 수 있나요?</button>
     <button onclick="showQA(11)"><i class="fas fa-exclamation-circle"></i> 미아가 된 경우에는 어떻게 하나요?</button>
@@ -630,6 +635,411 @@
             "question": "โปรแกรมยอดนิยมที่สุดในศูนย์วัฒนธรรมเด็กคืออะไร?",
             "answer": "โปรแกรมที่ได้รับความนิยมที่สุดในตอนนี้คือ 'สตูดิโอสร้างสรรค์' ซึ่งเด็ก ๆ สามารถใช้วัสดุหลากหลายในการสร้างสรรค์ผลงาน ครอบครัวจำนวนมากมาเข้าร่วมโปรแกรมนี้"
             }
+        ], "cn" : [
+            {
+              "question": "在这里可以做些什么？",
+              "answer": "在儿童文化馆，您可以参与为儿童设计的创意体验活动以及各种主题的展览。这里还准备了可以直接参与的科学、艺术、历史等主题的体验项目。此外，还有许多家长和孩子可以一起参与的家庭项目。"
+            },
+            {
+              "question": "这里的营业时间是怎样的？",
+              "answer": "营业时间为上午10点至下午6点。最后入场时间为下午5点，请注意每周一为例行休馆日。"
+            },
+            {
+              "question": "这里的门票是多少？",
+              "answer": "儿童文化馆可以免费入场。但是，部分特别展览或体验项目可能会收取少量费用，请提前确认。"
+            },
+            {
+              "question": "有什么体验项目？",
+              "answer": "艺术体验有“彩绘工作坊”，科学体验有“小型机器人制作”，历史体验有“传统游戏体验”。具体的项目内容可以在服务台或官网上查看。"
+            },
+            {
+              "question": "洗手间在哪里？",
+              "answer": "洗手间位于1层左侧尽头和2层右侧尽头。此外还设有儿童专用洗手间，如有需要可向我们咨询。"
+            },
+            {
+              "question": "餐厅在哪里？",
+              "answer": "文化馆内部地下一层有美食广场，可以选择从轻食到正餐的多种菜单。"
+            },
+            {
+              "question": "今天有什么特别活动？",
+              "answer": "特别活动每月都会更换，今天有“环保手工艺制作工作坊”和“宇宙探险VR体验”。具体时间表可以在信息显示屏上查看。"
+            },
+            {
+              "question": "需要预约吗？",
+              "answer": "普通展览无需预约，但受欢迎的体验项目或团体参观需要提前预约。可以通过儿童文化馆的官方网站进行预约。"
+            },
+            {
+              "question": "停车场在哪里？",
+              "answer": "停车场位于文化馆的地下一层和二层。参观儿童文化馆后可进行停车验证，免费停车2小时。"
+            },
+            {
+              "question": "只有孩子可以进入吗？",
+              "answer": "儿童文化馆不仅对孩子开放，也欢迎家长和家庭一起入馆。这里准备了适合所有年龄段参与的多样化项目。"
+            },
+            {
+              "question": "如果孩子走失了该怎么办？",
+              "answer": "如果孩子走失了，请立即通知服务台。我们会通过广播寻找家长，全体工作人员会共同协助，确保孩子安全找到。"
+            },
+            {
+              "question": "可以拍照吗？",
+              "answer": "在普通参观区域可以拍照，但请不要使用闪光灯。然而，部分特别展览区域可能禁止拍照，请注意入口处的指示牌。"
+            },
+            {
+              "question": "可以租婴儿车吗？",
+              "answer": "可以，在1层服务台可以租借婴儿车。租借免费，但需提供身份证作为担保。"
+            },
+            {
+              "question": "可以用英语获得导览吗？",
+              "answer": "可以，机器人和工作人员都可以提供英语服务。如有需要，请用英语提问，我们会为您解答。"
+            },
+            {
+              "question": "哺乳室在哪里？",
+              "answer": "哺乳室位于1层右侧尽头，为母婴提供安静舒适的环境，可进行哺乳和更换尿布。"
+            },
+            {
+              "question": "可以获取文化馆其他设施的信息吗？",
+              "answer": "当然可以！我们可以提供关于光州亚洲文化馆所有设施的信息、营业时间及活动日程。如有疑问，欢迎随时咨询。"
+            },
+            {
+              "question": "图书馆在哪里？",
+              "answer": "儿童文化馆的图书馆位于2层，为儿童准备了丰富的绘本和童话书，还设有阅读空间。"
+            },
+            {
+              "question": "紧急情况下的逃生出口在哪里？",
+              "answer": "紧急情况下，请沿着最近的紧急出口标志进行疏散。每层楼都有多个紧急出口，可以使用逃生楼梯。"
+            },
+            {
+              "question": "可以以团体形式参观吗？",
+              "answer": "可以，我们欢迎团体参观。通过提前预约，还可以参加特别为团体安排的体验活动。"
+            },
+            {
+              "question": "儿童文化馆最受欢迎的项目是什么？",
+              "answer": "目前最受欢迎的项目是“创意工作坊”，孩子们可以利用各种材料进行创作。许多家庭都为体验这个项目而前来参观。"
+            }
+          ], "ja" :  [
+          {
+            "question": "ここで何ができますか？",
+            "answer": "子ども文化館では、子ども向けの創造的な体験活動やさまざまなテーマの展示を観覧できます。科学、美術、歴史を学びながら、直接体験できるプログラムも用意されています。保護者と一緒に参加できるファミリープログラムも多数あります。"
+          },
+          {
+            "question": "営業時間はどうなっていますか？",
+            "answer": "営業時間は午前10時から午後6時までです。最終入場は午後5時までとなりますのでご注意ください。毎週月曜日は定休日です。"
+          },
+          {
+            "question": "入場料はいくらですか？",
+            "answer": "子ども文化館は無料で入場できます。ただし、一部の特別展示や体験プログラムには小額の参加費がかかる場合がありますので、事前にご確認ください。"
+          },
+          {
+            "question": "どのような体験プログラムがありますか？",
+            "answer": "美術体験では「カラフルペインティングワークショップ」、科学体験では「小型ロボット作り」、歴史プログラムでは「伝統遊び体験」が用意されています。具体的なプログラム内容は案内デスクやウェブサイトでご確認ください。"
+          },
+          {
+            "question": "トイレはどこにありますか？",
+            "answer": "トイレは1階の左端と2階の右端にあります。子ども専用トイレも設置されていますので、必要に応じてご案内いたします。"
+          },
+          {
+            "question": "レストランはどこにありますか？",
+            "answer": "文化館内の地下1階にフードコートがあります。軽食からしっかりした食事まで、さまざまなメニューをお選びいただけます。"
+          },
+          {
+            "question": "今日の特別プログラムはありますか？",
+            "answer": "特別プログラムは毎月変わります。本日は「エコクラフト制作ワークショップ」と「宇宙探検VR体験」が行われます。詳しいスケジュールは案内モニターをご覧ください。"
+          },
+          {
+            "question": "予約が必要ですか？",
+            "answer": "通常の展示は予約なしでご利用いただけますが、人気の体験プログラムや団体訪問は事前予約が必要です。予約は子ども文化館の公式ウェブサイトで可能です。"
+          },
+          {
+            "question": "駐車場はどこにありますか？",
+            "answer": "駐車場は文化館の地下2階と3階にあります。子ども文化館をご利用の場合、駐車確認を受けると2時間無料で利用できます。"
+          },
+          {
+            "question": "子どもだけ入場できますか？",
+            "answer": "子ども文化館は子どもだけでなく、保護者や家族単位でも入場できます。すべての年齢層が楽しめるさまざまなプログラムを用意しています。"
+          },
+          {
+            "question": "迷子になった場合はどうすればいいですか？",
+            "answer": "お子さまが迷子になった場合は、すぐに案内デスクにお知らせください。放送を通じて保護者をお探しし、全スタッフが協力して安全にお子さまを見つけられるようお手伝いいたします。"
+          },
+          {
+            "question": "写真撮影は可能ですか？",
+            "answer": "通常の観覧エリアでは写真撮影が可能ですが、フラッシュの使用はお控えください。ただし、一部の特別展示エリアでは撮影が禁止されていますので、入口の案内看板をご確認ください。"
+          },
+          {
+            "question": "ベビーカーの貸し出しはありますか？",
+            "answer": "はい、幼いお子さまをお連れの場合、1階の案内デスクでベビーカーを貸し出しています。無料でご利用いただけますが、身分証明書をお預けいただきます。"
+          },
+          {
+            "question": "英語で案内を受けられますか？",
+            "answer": "はい、ロボットとスタッフは英語での案内も提供しています。必要な場合は英語でご質問ください、丁寧にお答えします。"
+          },
+          {
+            "question": "授乳室はどこにありますか？",
+            "answer": "授乳室は1階の右端に設置されています。静かで快適な空間で授乳やおむつ替えを行えます。"
+          },
+          {
+            "question": "文化館の他の施設についても案内を受けられますか？",
+            "answer": "もちろんです！光州アジア文化館のすべての施設情報、営業時間、プログラムスケジュールなどをお知らせできます。ご不明な点があればいつでもお問い合わせください。"
+          },
+          {
+            "question": "図書館はどこにありますか？",
+            "answer": "子ども文化館の図書館は2階にあります。子ども向けのさまざまな絵本や童話が準備されており、読書スペースも用意されています。"
+          },
+          {
+            "question": "緊急時の避難経路はどこですか？",
+            "answer": "緊急時には、近くの非常口の表示に従って避難してください。各階には複数の非常口があり、避難階段をご利用ください。"
+          },
+          {
+            "question": "団体で訪問できますか？",
+            "answer": "はい、団体での訪問も可能です。事前予約を通じて体験プログラムを申し込むと、団体に適した特別な体験もご提供いたします。"
+          },
+          {
+            "question": "子ども文化館で一番人気のあるプログラムは何ですか？",
+            "answer": "現在、一番人気のあるプログラムは「創造力アトリエ」で、子どもたちがさまざまな材料を使って創作活動を楽しめる空間です。このプログラムを体験するために多くの家族が訪れています。"
+          }
+        ], "ar" :  [
+          {
+            "question": "ماذا يمكن أن نفعل هنا؟",
+            "answer": "في مركز ثقافة الأطفال، يمكن للأطفال المشاركة في أنشطة إبداعية وتجربة معارض حول مواضيع متنوعة. يتم تقديم برامج تمكن الأطفال من التعلم والتجربة في مجالات العلوم والفنون والتاريخ. هناك أيضًا برامج عائلية يمكن للأهل المشاركة فيها مع أطفالهم."
+          },
+          {
+            "question": "ما هي ساعات العمل هنا؟",
+            "answer": "ساعات العمل من الساعة 10 صباحًا حتى 6 مساءً. يمكن الدخول حتى الساعة 5 مساءً فقط، والرجاء ملاحظة أن يوم الاثنين هو يوم العطلة الأسبوعية."
+          },
+          {
+            "question": "كم تبلغ رسوم الدخول؟",
+            "answer": "الدخول إلى مركز ثقافة الأطفال مجاني. ومع ذلك، قد تتطلب بعض المعارض الخاصة أو برامج التجربة رسومًا رمزية، لذا يُنصح بالتحقق مسبقًا."
+          },
+          {
+            "question": "ما هي برامج التجربة المتوفرة؟",
+            "answer": "توجد ورش عمل فنية مثل 'ورشة الرسم بالألوان الزاهية'، وتجارب علمية مثل 'تصميم روبوت صغير'، وبرامج تاريخية مثل 'تجربة الألعاب التقليدية'. لمزيد من التفاصيل، يرجى مراجعة مكتب الاستعلامات أو الموقع الإلكتروني."
+          },
+          {
+            "question": "أين تقع الحمامات؟",
+            "answer": "تقع الحمامات في الطابق الأول في الطرف الأيسر وفي الطابق الثاني في الطرف الأيمن. كما توجد حمامات مخصصة للأطفال، ويمكننا إرشادكم إليها إذا لزم الأمر."
+          },
+          {
+            "question": "أين يمكن العثور على المطاعم؟",
+            "answer": "يوجد في الطابق السفلي الأول ساحة طعام داخل المركز الثقافي. تحتوي على خيارات متنوعة تناسب الوجبات الخفيفة والوجبات الرئيسية."
+          },
+          {
+            "question": "هل هناك برامج خاصة اليوم؟",
+            "answer": "تتغير البرامج الخاصة كل شهر، واليوم لدينا 'ورشة صنع الحرف اليدوية الصديقة للبيئة' و'تجربة الواقع الافتراضي لاستكشاف الفضاء'. يمكنكم الاطلاع على الجدول الزمني في شاشات العرض."
+          },
+          {
+            "question": "هل الحجز مطلوب؟",
+            "answer": "لا يتطلب دخول المعارض العامة حجزًا، ولكن يُفضل الحجز المسبق للبرامج التجريبية الشهيرة أو الزيارات الجماعية. يمكن إجراء الحجز عبر الموقع الرسمي للمركز."
+          },
+          {
+            "question": "أين يوجد موقف السيارات؟",
+            "answer": "يوجد موقف السيارات في الطابقين الثاني والثالث تحت الأرض من المركز الثقافي. عند زيارة مركز ثقافة الأطفال، يمكنكم تسجيل مواقف السيارات للحصول على ساعتين مجانيتين."
+          },
+          {
+            "question": "هل يمكن للأطفال فقط الدخول؟",
+            "answer": "مركز ثقافة الأطفال مفتوح للأطفال وكذلك للأسر وأولياء الأمور. هناك برامج متنوعة تناسب جميع الفئات العمرية."
+          },
+          {
+            "question": "ماذا نفعل إذا ضاع الطفل؟",
+            "answer": "إذا ضاع الطفل، يرجى إبلاغ مكتب الاستعلامات فورًا. سنقوم بالإعلان عبر الإذاعة والبحث بمساعدة جميع الموظفين لضمان العثور عليه بأمان."
+          },
+          {
+            "question": "هل يمكن التصوير هنا؟",
+            "answer": "يمكن التصوير في المناطق العامة، ولكن يرجى عدم استخدام الفلاش. ومع ذلك، قد تكون هناك قيود على التصوير في بعض المعارض الخاصة، لذا يرجى مراجعة اللوحات الإرشادية عند المدخل."
+          },
+          {
+            "question": "هل يمكن استئجار عربة أطفال؟",
+            "answer": "نعم، يمكنكم استئجار عربة أطفال من مكتب الاستعلامات في الطابق الأول. الاستئجار مجاني، ولكن يتطلب تقديم بطاقة هوية."
+          },
+          {
+            "question": "هل يمكن الحصول على إرشادات باللغة الإنجليزية هنا؟",
+            "answer": "نعم، يقدم الروبوت والموظفون إرشادات باللغة الإنجليزية. إذا كنتم بحاجة، يمكنكم طرح الأسئلة باللغة الإنجليزية وسنقدم الإجابة بكل سرور."
+          },
+          {
+            "question": "أين تقع غرفة الرضاعة؟",
+            "answer": "تقع غرفة الرضاعة في الطرف الأيمن من الطابق الأول. توفر الغرفة مساحة هادئة ومريحة للرضاعة وتغيير الحفاضات."
+          },
+          {
+            "question": "هل يمكن الحصول على معلومات عن المرافق الأخرى في المركز الثقافي؟",
+            "answer": "بالطبع! يمكننا تقديم معلومات حول جميع مرافق مركز آسيا الثقافي، بما في ذلك ساعات العمل وجدول البرامج. لا تترددوا في طرح أي استفسارات."
+          },
+          {
+            "question": "أين تقع المكتبة؟",
+            "answer": "تقع مكتبة مركز ثقافة الأطفال في الطابق الثاني. تحتوي على مجموعة متنوعة من كتب الأطفال والقصص المصورة، كما تضم مساحات مخصصة للقراءة."
+          },
+          {
+            "question": "أين توجد مخارج الطوارئ؟",
+            "answer": "في حالة الطوارئ، يرجى اتباع اللافتات التي تشير إلى مخارج الطوارئ. يحتوي كل طابق على عدة مخارج، ويمكن استخدام السلالم المخصصة للطوارئ."
+          },
+          {
+            "question": "هل يمكن زيارة المركز كمجموعة؟",
+            "answer": "نعم، يمكن زيارة المركز كمجموعة. عند الحجز المسبق، يمكنكم الاستمتاع ببرامج تجربة مخصصة تناسب المجموعات."
+          },
+          {
+            "question": "ما هو البرنامج الأكثر شعبية في مركز ثقافة الأطفال؟",
+            "answer": "حاليًا، البرنامج الأكثر شعبية هو 'مختبر الإبداع'، حيث يمكن للأطفال استخدام مواد متنوعة للقيام بأنشطة إبداعية. العديد من الأسر يزورون المركز للاستمتاع بهذا البرنامج."
+          }
+        ], "fa" : [
+          {
+            "question": "اینجا چه کاری می‌توان انجام داد؟",
+            "answer": "در مرکز فرهنگ کودکان، کودکان می‌توانند در فعالیت‌های خلاقانه و نمایشگاه‌هایی با موضوعات متنوع شرکت کنند. برنامه‌هایی برای یادگیری و تجربه در زمینه‌های علوم، هنر و تاریخ وجود دارد. همچنین برنامه‌هایی برای خانواده‌ها طراحی شده است که والدین نیز می‌توانند با کودکان خود شرکت کنند."
+          },
+          {
+            "question": "ساعات کاری اینجا چگونه است؟",
+            "answer": "ساعات کاری از ساعت ۱۰ صبح تا ۶ بعدازظهر است. ورود نهایی تا ساعت ۵ بعدازظهر ممکن است. لطفاً توجه داشته باشید که روزهای دوشنبه تعطیل است."
+          },
+          {
+            "question": "هزینه ورودی چقدر است؟",
+            "answer": "ورود به مرکز فرهنگ کودکان رایگان است. با این حال، برخی نمایشگاه‌های ویژه یا برنامه‌های تجربه ممکن است هزینه کمی داشته باشند، بنابراین لطفاً از قبل بررسی کنید."
+          },
+          {
+            "question": "چه برنامه‌های تجربی موجود است؟",
+            "answer": "برنامه‌های هنری مانند 'کارگاه نقاشی رنگارنگ' و برنامه‌های علمی مانند 'ساخت ربات کوچک' وجود دارد. همچنین برنامه‌های تاریخی مانند 'تجربه بازی‌های سنتی' در دسترس است. جزئیات برنامه‌ها را می‌توانید از دفتر اطلاعات یا وبسایت مشاهده کنید."
+          },
+          {
+            "question": "دستشویی‌ها کجا هستند؟",
+            "answer": "دستشویی‌ها در طبقه اول در انتهای سمت چپ و در طبقه دوم در انتهای سمت راست قرار دارند. همچنین دستشویی‌های مخصوص کودکان نیز موجود است و در صورت نیاز راهنمایی خواهیم کرد."
+          },
+          {
+            "question": "رستوران کجا است؟",
+            "answer": "در طبقه زیرزمین یک، یک فودکورت داخل مرکز فرهنگی وجود دارد. غذاهای متنوع از اسنک‌های ساده تا وعده‌های غذایی کامل در دسترس هستند."
+          },
+          {
+            "question": "آیا برنامه‌های ویژه‌ای امروز وجود دارد؟",
+            "answer": "برنامه‌های ویژه هر ماه تغییر می‌کنند. امروز 'کارگاه ساخت صنایع دستی سازگار با محیط زیست' و 'تجربه واقعیت مجازی کاوش در فضا' برگزار می‌شوند. می‌توانید جدول زمانی را در نمایشگرهای اطلاعاتی مشاهده کنید."
+          },
+          {
+            "question": "آیا رزرو لازم است؟",
+            "answer": "برای ورود به نمایشگاه‌های عمومی نیازی به رزرو نیست، اما برای برنامه‌های تجربی محبوب یا بازدیدهای گروهی رزرو قبلی ضروری است. رزرو از طریق وبسایت رسمی مرکز امکان‌پذیر است."
+          },
+          {
+            "question": "پارکینگ کجا است؟",
+            "answer": "پارکینگ در طبقات زیرزمین دوم و سوم مرکز فرهنگی قرار دارد. هنگام بازدید از مرکز فرهنگ کودکان می‌توانید تأیید پارکینگ را دریافت کرده و دو ساعت رایگان استفاده کنید."
+          },
+          {
+            "question": "آیا فقط کودکان می‌توانند وارد شوند؟",
+            "answer": "مرکز فرهنگ کودکان برای کودکان و همچنین خانواده‌ها و والدین باز است. برنامه‌های متنوعی برای تمام گروه‌های سنی طراحی شده است."
+          },
+          {
+            "question": "اگر کودک گم شود چه کاری باید انجام داد؟",
+            "answer": "اگر کودکی گم شد، لطفاً فوراً به دفتر اطلاعات اطلاع دهید. با اعلام از طریق بلندگو و همکاری تمامی کارکنان، کودک را به‌طور ایمن پیدا خواهیم کرد."
+          },
+          {
+            "question": "آیا می‌توان اینجا عکس گرفت؟",
+            "answer": "عکاسی در مناطق عمومی مجاز است، اما لطفاً از فلاش استفاده نکنید. با این حال، ممکن است در برخی از نمایشگاه‌های ویژه عکاسی محدود باشد، بنابراین لطفاً تابلوهای راهنما در ورودی را بررسی کنید."
+          },
+          {
+            "question": "آیا می‌توان کالسکه کودک اجاره کرد؟",
+            "answer": "بله، اگر با فرزند کوچک خود هستید، می‌توانید از دفتر اطلاعات در طبقه اول کالسکه اجاره کنید. اجاره رایگان است و باید کارت شناسایی ارائه دهید."
+          },
+          {
+            "question": "آیا می‌توان راهنمایی به زبان انگلیسی دریافت کرد؟",
+            "answer": "بله، ربات و کارکنان راهنمایی به زبان انگلیسی ارائه می‌دهند. اگر نیاز داشتید، می‌توانید سوالات خود را به زبان انگلیسی بپرسید و با خوشحالی پاسخ خواهیم داد."
+          },
+          {
+            "question": "اتاق شیردهی کجا است؟",
+            "answer": "اتاق شیردهی در انتهای سمت راست طبقه اول قرار دارد. این اتاق فضایی آرام و راحت برای شیردهی و تعویض پوشک فراهم می‌کند."
+          },
+          {
+            "question": "آیا می‌توان اطلاعاتی درباره سایر امکانات مرکز فرهنگی دریافت کرد؟",
+            "answer": "بله، ما می‌توانیم اطلاعاتی درباره تمامی امکانات مرکز فرهنگی آسیا، از جمله ساعات کاری و برنامه‌ها ارائه دهیم. هر سوالی دارید، بپرسید."
+          },
+          {
+            "question": "کتابخانه کجا است؟",
+            "answer": "کتابخانه مرکز فرهنگ کودکان در طبقه دوم قرار دارد. مجموعه‌ای از کتاب‌های تصویری و داستان‌های کودکانه و همچنین فضای مطالعه در آنجا موجود است."
+          },
+          {
+            "question": "مسیرهای خروج اضطراری کجا هستند؟",
+            "answer": "در مواقع اضطراری، لطفاً تابلوهای خروج اضطراری را دنبال کنید. هر طبقه چندین خروجی دارد و می‌توانید از پله‌های اضطراری استفاده کنید."
+          },
+          {
+            "question": "آیا می‌توان به‌صورت گروهی از مرکز بازدید کرد؟",
+            "answer": "بله، بازدید گروهی امکان‌پذیر است. با رزرو قبلی می‌توانید از برنامه‌های تجربی ویژه‌ای که برای گروه‌ها طراحی شده‌اند بهره‌مند شوید."
+          },
+          {
+            "question": "محبوب‌ترین برنامه در مرکز فرهنگ کودکان چیست؟",
+            "answer": "در حال حاضر، محبوب‌ترین برنامه 'آزمایشگاه خلاقیت' است که در آن کودکان می‌توانند از مواد مختلف برای فعالیت‌های خلاقانه استفاده کنند. بسیاری از خانواده‌ها برای لذت بردن از این برنامه به مرکز می‌آیند."
+          }
+        ], "tr" : [
+          {
+            "question": "Burada ne yapabilirsiniz?",
+            "answer": "Çocuk Kültür Merkezi'nde çocuklar için yaratıcı etkinlikler ve çeşitli temalarda sergiler bulunmaktadır. Bilim, sanat ve tarih gibi konuları öğrenip doğrudan deneyimleyebilecekleri programlar hazırlanmıştır. Aileler için ebeveynlerin de katılabileceği aile programları da mevcuttur."
+          },
+          {
+            "question": "Buradaki çalışma saatleri nedir?",
+            "answer": "Çalışma saatleri sabah 10'dan akşam 6'ya kadardır. Son giriş saati 5'tir, lütfen buna dikkat edin. Her Pazartesi düzenli tatil günüdür."
+          },
+          {
+            "question": "Giriş ücreti ne kadar?",
+            "answer": "Çocuk Kültür Merkezi'ne giriş ücretsizdir. Ancak bazı özel sergiler veya deneyim programları küçük bir katılım ücreti gerektirebilir, lütfen önceden kontrol edin."
+          },
+          {
+            "question": "Hangi deneyim programları var?",
+            "answer": "Sanat deneyimlerinde 'Renkli Boyama Atölyesi', bilim deneyimlerinde 'Küçük Robot Yapımı' gibi programlar bulunmaktadır. Tarih programı olarak 'Geleneksel Oyun Deneyimi' sunulmaktadır. Programların detaylarını danışma masasında veya web sitesinde kontrol edebilirsiniz."
+          },
+          {
+            "question": "Tuvaletler nerede?",
+            "answer": "Tuvaletler birinci katın sol ucunda ve ikinci katın sağ ucunda bulunmaktadır. Çocuklar için özel tuvaletler de mevcuttur, ihtiyaç halinde size rehberlik edebiliriz."
+          },
+          {
+            "question": "Restoran nerede?",
+            "answer": "Kültür merkezi içerisinde birinci bodrum katta bir yemek alanı bulunmaktadır. Atıştırmalıklardan doyurucu yemeklere kadar çeşitli menü seçenekleri sunulmaktadır."
+          },
+          {
+            "question": "Bugün özel programlar var mı?",
+            "answer": "Özel programlar her ay değişmektedir. Bugün 'Çevre Dostu El Sanatları Atölyesi' ve 'Uzay Keşfi VR Deneyimi' gerçekleştirilmektedir. Detaylı zaman çizelgesini bilgi ekranlarından kontrol edebilirsiniz."
+          },
+          {
+            "question": "Rezervasyon gerekli mi?",
+            "answer": "Genel sergiler için rezervasyon gerekmez, ancak popüler deneyim programları veya grup ziyaretleri için önceden rezervasyon gereklidir. Rezervasyon, Çocuk Kültür Merkezi'nin resmi web sitesi üzerinden yapılabilir."
+          },
+          {
+            "question": "Otopark nerede?",
+            "answer": "Otopark, kültür merkezinin ikinci ve üçüncü bodrum katlarındadır. Çocuk Kültür Merkezi'ni ziyaret ettiğinizde park onayı alarak iki saat ücretsiz kullanabilirsiniz."
+          },
+          {
+            "question": "Sadece çocuklar mı girebilir?",
+            "answer": "Çocuk Kültür Merkezi sadece çocuklar için değil, ebeveynler ve aile grupları için de açıktır. Tüm yaş gruplarına hitap edecek çeşitli programlar hazırlanmıştır."
+          },
+          {
+            "question": "Eğer bir çocuk kaybolursa ne yapılmalı?",
+            "answer": "Eğer bir çocuk kaybolursa, lütfen hemen danışma masasına bildirin. Anons yaparak ebeveynlere ulaşılacak ve tüm personel çocuğu güvenle bulmak için iş birliği yapacaktır."
+          },
+          {
+            "question": "Fotoğraf çekmek mümkün mü?",
+            "answer": "Genel sergi alanlarında fotoğraf çekmek serbesttir, ancak lütfen flaş kullanmayın. Ancak bazı özel sergi alanlarında fotoğraf çekimi yasak olabilir, girişteki bilgilendirme levhalarını kontrol edin."
+          },
+          {
+            "question": "Bebek arabası kiralayabilir miyim?",
+            "answer": "Evet, küçük çocuklarla birlikteyseniz, birinci kattaki danışma masasından bebek arabası kiralayabilirsiniz. Kiralama ücretsizdir, kimlik bırakmanız gerekmektedir."
+          },
+          {
+            "question": "Burada İngilizce rehberlik alabilir miyim?",
+            "answer": "Evet, robotlar ve personel İngilizce rehberlik hizmeti sunmaktadır. İhtiyaç duyduğunuzda İngilizce olarak sorularınızı sorabilirsiniz, size memnuniyetle yardımcı oluruz."
+          },
+          {
+            "question": "Emzirme odası nerede?",
+            "answer": "Emzirme odası birinci katın sağ ucunda bulunmaktadır. Bu odada rahat bir şekilde emzirme ve bebek bezi değiştirme işlemlerinizi gerçekleştirebilirsiniz."
+          },
+          {
+            "question": "Kültür merkezindeki diğer tesisler hakkında bilgi alabilir miyim?",
+            "answer": "Elbette! Gwangju Asya Kültür Merkezi'ndeki tüm tesisler, çalışma saatleri ve programlar hakkında bilgi sağlayabiliriz. Merak ettiğiniz her şeyi sorabilirsiniz."
+          },
+          {
+            "question": "Kütüphane nerede?",
+            "answer": "Çocuk Kültür Merkezi'nin kütüphanesi ikinci katta bulunmaktadır. Çocuklar için çeşitli resimli kitaplar ve masal kitapları ile birlikte okuma alanı da mevcuttur."
+          },
+          {
+            "question": "Acil durum çıkışları nerede?",
+            "answer": "Acil bir durumda, lütfen acil çıkış işaretlerini takip edin. Her katta birden fazla acil çıkış bulunmaktadır ve acil durum merdivenlerini kullanabilirsiniz."
+          },
+          {
+            "question": "Grup olarak ziyaret edebilir miyiz?",
+            "answer": "Evet, grup ziyareti mümkündür. Önceden rezervasyon yaparak grup için özel deneyim programlarından faydalanabilirsiniz."
+          },
+          {
+            "question": "Çocuk Kültür Merkezi'ndeki en popüler program nedir?",
+            "answer": "Şu anda en popüler program 'Yaratıcılık Atölyesi'dir. Çocuklar çeşitli malzemelerle yaratıcı etkinlikler yapabilir. Birçok aile bu programdan yararlanmak için merkeze gelmektedir."
+          }
         ]
     }
 
