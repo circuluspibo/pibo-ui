@@ -27,8 +27,7 @@ function loadScript(url, callback) {
     _isConnect: false,
     onload: (mode) => {
       const iot_url =  `${mode.toLowerCase().charAt(0)}-proxy.circul.us:8443`;
-      alert(iot_url)
-  
+ 
       //pibo._client = mqtt.connect('ws://13.124.144.67:8888')
       //pibo._client = mqtt.connect('ws://127.0.0.1:8888')
       //pibo._client = mqtt.connect('wss://dev-log.circul.us:57602')
