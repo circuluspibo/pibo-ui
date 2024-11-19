@@ -1066,9 +1066,22 @@
     }
 
     let lang = 'ko'
+    const hello = {
+      "ko": "안녕하세요 국립아시아문화전당의 어린이 문화원에 오신 것을 환영합니다",
+      "en": "Hello, welcome to the Children's Cultural Center at the National Asian Cultural Center",
+      "ru": "Здравствуйте, добро пожаловать в Детский культурный центр Национального Азиатского культурного центра",
+      "vi": "Xin chào, chào mừng bạn đến Trung tâm Văn hóa Thiếu nhi của Trung tâm Văn hóa Quốc gia Châu Á",
+      "th": "สวัสดีค่ะ ยินดีต้อนรับสู่ศูนย์วัฒนธรรมเด็กแห่งศูนย์วัฒนธรรมแห่งชาติเอเชีย",
+      "cn": "您好，欢迎来到亚洲文化殿堂的儿童文化中心",
+      "ja": "こんにちは、国立アジア文化殿堂の子ども文化センターへようこそ",
+      "ar": "مرحبًا، أهلاً وسهلاً بكم في مركز الأطفال الثقافي بالمركز الثقافي الوطني الآسيوي",
+      "fa": "سلام، به مرکز فرهنگی کودکان در مرکز ملی فرهنگ آسیا خوش آمدید",
+      "tr": "Merhaba, Ulusal Asya Kültür Merkezi Çocuk Kültür Merkezi'ne hoş geldiniz"
+    }
 
     function setLang(lng){
         lang = lng
+        pibo.tell(hello[lang], { lang })
     }
 
     function showQA(index) {
