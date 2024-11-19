@@ -1086,9 +1086,10 @@
 
 
     let id = localStorage.getItem('id')
-    alert(id)
-    if(id == 'null'){
+
+    if(id == null){
       id = prompt("Input robot id")
+      localStorage.setItem('id',id)
     }
 
     //const ids= "10000000aec32b8a"
