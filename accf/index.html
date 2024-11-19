@@ -223,6 +223,9 @@
     <button onclick="showQA(18)"><i class="fas fa-fire-extinguisher"></i> 비상시 대피로는 어디인가요?</button>
     <button onclick="showQA(19)"><i class="fas fa-users"></i> 단체로 방문할 수 있나요?</button>
     <button onclick="showQA(19)"><i class="fas fa-award"></i> 어린이문화원에서 가장 인기 있는 프로그램은 무엇인가요?</button>
+
+
+    <input id='volume' type="range" min="0" max="100" value="80"></input>
   </div>
 
   <!-- 오른쪽 콘텐츠 -->
@@ -1137,6 +1140,12 @@
         })    
 
     }
+
+    
+    document.getElementById('volume').onchange = e=>{
+      pibo.volume(e.target.value)
+    }
+    
   </script>
 
 </body>
