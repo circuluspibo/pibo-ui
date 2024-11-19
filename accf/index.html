@@ -199,7 +199,7 @@
 
   <!-- 왼쪽 메뉴 -->
   <div class="menu">
-    <img src="img/logo.jpg" width="100%"/>
+    <img src="img/logo.jpg" width="100%" onclick="full()"/>
     <!--
     <h2>질문 목록</h2>
     -->
@@ -1087,6 +1087,18 @@
         pibo.tell(hello[lang], { lang })
     }
 
+    function full(){
+      element = document.documentElement;
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.webkitRequestFullscreen) { // Safari
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) { // Internet Explorer/Edge
+        element.msRequestFullscreen();
+      }
+
+    }
+
     function showQA(index) {
       const chat = document.getElementById("chat");
       const selectedQA = QAs[lang][index];
@@ -1145,7 +1157,7 @@
     document.getElementById('volume').onchange = e=>{
       pibo.volume(e.target.value)
     }
-    
+
   </script>
 
 </body>
