@@ -74,10 +74,17 @@
       flex: 1;
       padding: 40px;
       background-color: radial-gradient(circle, #ffe7e7, #ffd6d6);
-      /*
+      
       display: flex;
-      */
+  
       flex-direction: column;
+      gap: 20px;
+    }
+
+    .content .lang-container {
+      display: flex;
+      flex-direction: column;
+      padding-top : 20px;
       gap: 20px;
     }
 
@@ -184,11 +191,11 @@
     img {
       text-align: center;
     }
-    /*
+    
     .main {
       width : 100%;
     }
-      */
+    
   </style>
 </head>
 <body>
@@ -223,20 +230,23 @@
 
   <!-- 오른쪽 콘텐츠 -->
   <div class="content">
-    <button class="flag" onclick="setLang('ko')"><img src="img/south-korea.png"/></button>
-    <button class="flag" onclick="setLang('en')"><img src="img/united-kingdom.png"/></button>
-    <button class="flag" onclick="setLang('ru')"><img src="img/russia.png"/></button>
-    <button class="flag" onclick="setLang('vi')"><img src="img/vietnam.png"/></button>
-    <button class="flag" onclick="setLang('th')"><img src="img/thailand.png"/></button>
-    <button class="flag" onclick="setLang('cn')"><img src="img/china.png"/></button>
-    <button class="flag" onclick="setLang('ja')"><img src="img/japan.png"/></button>
-    <button class="flag" onclick="setLang('ar')"><img src="img/saudi-arabia.png"/></button>
-    <button class="flag" onclick="setLang('fa')"><img src="img/iran.png"/></button>
-    <button class="flag" onclick="setLang('tr')"><img src="img/turkey.png"/></button>
+    <div class="lang-container">
+      <button class="flag" onclick="setLang('ko')"><img src="img/south-korea.png"/></button>
+      <button class="flag" onclick="setLang('en')"><img src="img/united-kingdom.png"/></button>
+      <button class="flag" onclick="setLang('ru')"><img src="img/russia.png"/></button>
+      <button class="flag" onclick="setLang('vi')"><img src="img/vietnam.png"/></button>
+      <button class="flag" onclick="setLang('th')"><img src="img/thailand.png"/></button>
+      <button class="flag" onclick="setLang('cn')"><img src="img/china.png"/></button>
+      <button class="flag" onclick="setLang('ja')"><img src="img/japan.png"/></button>
+      <button class="flag" onclick="setLang('ar')"><img src="img/saudi-arabia.png"/></button>
+      <button class="flag" onclick="setLang('fa')"><img src="img/iran.png"/></button>
+      <button class="flag" onclick="setLang('tr')"><img src="img/turkey.png"/></button>
+    </div>
     <!--
     <h1>어린이문화원 안내</h1>
       <img class='main' src="img/main.jpg" witdh="100%" />    -->
     <div class="chat-container" id="chat">
+      <img class='main' src="img/main.jpg" witdh="100%" />
     </div>
   </div>
   <script src="js/pibo.js"></script>
