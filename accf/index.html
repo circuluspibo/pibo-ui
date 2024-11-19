@@ -169,25 +169,44 @@
         padding: 20px;
       }
     }
+
+    .flag {
+      width : 20%;
+    }
   </style>
 </head>
 <body>
 
   <!-- 왼쪽 메뉴 -->
   <div class="menu">
-    <button onclick="setLang('ko')">한국어</button>
-    <button onclick="setLang('ko')">english</button>
-    <button onclick="setLang('ru')">русский</button>
-    <button onclick="setLang('vi')">Tiếng Việt</button>
-    <button onclick="setLang('th')">แบบไทย</button>
+    <button class="flag" onclick="setLang('ko')">한국어</button>
+    <button class="flag" onclick="setLang('ko')">english</button>
+    <button class="flag" onclick="setLang('ru')">русский</button>
+    <button class="flag" onclick="setLang('vi')">Tiếng Việt</button>
+    <button class="flag" onclick="setLang('th')">แบบไทย</button>
     <!--
     <h2>질문 목록</h2>
     -->
-    <button onclick="showQA(0)"><i class="fas fa-question-circle"></i> 여기에서 무엇을 할 수 있나요?</button>
+    <button onclick="showQA(0)"><i class="fas fa-palette"></i> 여기에서 무엇을 할 수 있나요?</button>
     <button onclick="showQA(1)"><i class="far fa-clock"></i> 운영 시간은 어떻게 되나요?</button>
-    <button onclick="showQA(2)"><i class="fas fa-ticket-alt"></i> 입장료가 얼마인가요?</button>
-    <button onclick="showQA(3)"><i class="fas fa-paint-brush"></i> 체험 프로그램은 무엇이 있나요?</button>
+    <button onclick="showQA(2)"><i class="fas fa-ticket"></i> 입장료가 얼마인가요?</button>
+    <button onclick="showQA(3)"><i class="fas fa-robot"></i> 체험 프로그램은 무엇이 있나요?</button>
     <button onclick="showQA(4)"><i class="fas fa-restroom"></i> 화장실은 어디에 있나요?</button>
+    <button onclick="showQA(5)"><i class="fas fa-utensils"></i> 식당은 어디에 있나요?</button>
+    <button onclick="showQA(6)"><i class="fas fa-calendar-star"></i> 오늘 특별 프로그램이 있나요?</button>
+    <button onclick="showQA(8)"><i class="fas fa-calendar-check"></i> 예약이 필요한가요?</button>
+    <button onclick="showQA(9)"><i class="fas fa-parking"></i> 주차장은 어디에 있나요?</button>
+    <button onclick="showQA(10)"><i class="fas fa-child"></i> 아이들만 들어갈 수 있나요?</button>
+    <button onclick="showQA(11)"><i class="fas fa-exclamation-circle"></i> 미아가 된 경우에는 어떻게 하나요?</button>
+    <button onclick="showQA(12)"><i class="fas fa-camera"></i> 사진 촬영이 가능한가요?</button>
+    <button onclick="showQA(13)"><i class="fas fa-baby-carriage"></i> 유모차 대여가 가능한가요?</button>
+    <button onclick="showQA(14)"><i class="fas fa-language"></i> 여기에서 영어로도 안내받을 수 있나요?</button>
+    <button onclick="showQA(15)"><i class="fas fa-baby"></i> 수유실은 어디에 있나요?</button>
+    <button onclick="showQA(16)"><i class="fas fa-landmark"></i> 문화전당의 다른 시설도 안내받을 수 있나요?</button>
+    <button onclick="showQA(17)"><i class="fas fa-book"></i> 도서관은 어디에 있나요?</button>
+    <button onclick="showQA(18)"><i class="fas fa-fire-extinguisher"></i> 비상시 대피로는 어디인가요?</button>
+    <button onclick="showQA(19)"><i class="fas fa-users"></i> 단체로 방문할 수 있나요?</button>
+    <button onclick="showQA(19)"><i class="fas fa-award"></i> 어린이문화원에서 가장 인기 있는 프로그램은 무엇인가요?</button>
   </div>
 
   <!-- 오른쪽 콘텐츠 -->
